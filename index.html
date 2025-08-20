@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Todo App</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+<body>
+  <!-- Background layers -->
+  <div class="twinkling"></div>
+  <canvas id="starfield"></canvas>
+
+  <!-- Main App -->
+  <div class="todos-bg-container d-flex align-items-center justify-content-center">
+    <div class="container text-center">
+      <h1 class="todos-heading text-light">✨ Todos ✨</h1>
+
+      <h2 class="create-task-heading text-light">
+        Create <span class="create-task-heading-subpart">Task</span>
+      </h2>
+
+      <div class="d-flex justify-content-center">
+        <input type="text" id="todoUserInput" class="todo-user-input" placeholder="What needs to be done?"/>
+        <button class=" button ml-2" id="addTodoButton">Add</button>
+      </div>      
+
+      <h2 class="todo-items-heading text-light mt-4">
+        My <span class="todo-items-heading-subpart">Tasks</span>
+      </h2>
+
+      <ul class="todo-items-container list-unstyled mt-3" id="todoItemsContainer"></ul>
+
+      <button class="button" id="saveTodoButton">Save</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
