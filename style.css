@@ -8,7 +8,7 @@ body {
   color: while;
 }
 
-.container {
+.container-inner {
   position: relative;
   z-index: 1;
   max-width: 400px;
@@ -70,7 +70,7 @@ input {
   align-items: center;
 }
 
-.container {
+.container-inner {
   background: rgba(20, 20, 40, 0.8);
   padding: 30px;
   border-radius: 20px;
@@ -197,4 +197,19 @@ input {
   margin-left: auto;
   margin-right: auto;
   
+}
+@media (max-width: 600px) {
+  .todo-user-input {
+    width: 80%;
+    font-size: 16px;
+  }
+
+  .button {
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+
+  .container-inner {
+    padding: 20px;
+  }
 }
