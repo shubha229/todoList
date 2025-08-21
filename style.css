@@ -213,3 +213,9 @@ input {
     padding: 20px;
   }
 }
+.spacing {
+  margin-top: 20px !important;
+  width: 100%;          /* force it full width */
+  display: flex;         
+  justify-content: center;
+}
